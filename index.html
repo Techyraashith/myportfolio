@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raashith Mohammed - Full Stack Developer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4E54C8;
+            --secondary-color: #8F94FB;
+        }
+
+        .top-contact-bar {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 8px 0;
+            font-size: 0.9rem;
+        }
+
+        .top-contact-bar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            display: inline-flex;
+            align-items: center;
+        }
+        .top-contact-bar i {
+            margin-right: 5px;
+        }
+
+        .social-links a {
+            color: white;
+            margin-left: 15px;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-2px);
+            color: rgba(255,255,255,0.8);
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            color: white;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill-badge {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            padding: 8px 15px;
+            border-radius: 20px;
+            color: white;
+            margin: 5px;
+            display: inline-block;
+            font-size: 0.9rem;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            margin: 10px auto;
+        }
+        
+            @media (max-width: 700px) {
+            .top-contact-bar .col-md-4 {
+                text-align: left !important;
+            }
+
+            .social-links {
+                text-align: left;
+                margin-top: 15px;
+            }
+
+            .social-links a {
+                margin-left: 0px;
+                margin-right: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+        <!-- Header -->
+        <div class="top-contact-bar">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <a href="mailto:raashithprg165@gmail.com"><i class="fas fa-envelope"></i>raashithprg165@gmail.com</a>
+                        <a href="https://maps.app.goo.gl/vXkocA18EKXMpn4L7"><i class="fas fa-map-marker-alt"></i>Suabshree Nagar Ext 6, Mugalivakkam, Porur, Chennai</a>
+                        <a href="tel:+919345810212"><i class="fas fa-phone"></i>9345810212</a>
+                    </div>
+                    <div class="col-md-4 text-end social-links">
+                        <a href="https://github.com/Techyraashith" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/techyraashith" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.hackerrank.com/profile/raashithmohamme1"_blank"><i class="fab fa-hackerrank"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <div class="container py-5">
+        <!-- Header Section -->
+        <div class="text-center mb-5">
+            <img src="raashith.jpg" alt="Raashith Mohammed" class="profile-img mb-4">
+            <h1 class="display-4 fw-bold text-primary mb-2">Raashith Mohammed</h1>
+            <h2 class="h4 text-secondary mb-4">Full Stack Developer</h2>
+            <p class="lead">Passionate developer crafting elegant solutions to complex problems</p>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="mb-5">
+            <h2 class="section-title text-center">Technical Skills</h2>
+            <div class="text-center">
+                <span class="skill-badge">HTML5</span>
+                <span class="skill-badge">CSS3</span>
+                <span class="skill-badge">Java</span>
+                <span class="skill-badge">SQL</span>
+                <span class="skill-badge">Git</span>
+                <span class="skill-badge">PHP</span>
+                <span class="skill-badge">Problem Solving</span>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="mb-5">
+            <h2 class="section-title text-center">Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3 text-primary">E-commerce Database</h3>
+                            <p>A full-stack e-commerce platform built with PHP and MySQL.</p>
+                            <p><strong>Technologies:</strong> PHP, MySQL, Bootstrap CSS</p>
+                            <!-- <p><strong>GitHub:</strong> <a href="#">github.com/johndoe/ecommerce</a></p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3 text-primary">Library management</h3>
+                            <p> The Basic level of Library management system Buid by using Java Collections.</p>
+                            <p><strong>Technologies:</strong> Core Java, Advanced Java Collections </p>
+                            <!-- <p><strong>GitHub:</strong> <a href="#">github.com/johndoe/taskmanager</a></p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- HackerRank Profile -->
+        <div class="card gradient-bg">
+            <div class="card-body text-center">
+                <h2 class="section-title text-white">HackerRank Achievements</h2>
+                <p class="mb-2">⭐ 2-star in Problem Solving</p>
+                <!-- <p class="mb-2"> Gold Badge in Java</p> -->
+                <!-- <p class="mb-2">💻 Solved 200+ Problems</p> -->
+                <p class="mb-2">💻 Untile Now I trying to Solve More Problems</p>
+                <p class="mb-2">🏆 And Get The Gold Badges</p>
+                <a href="https://www.hackerrank.com/profile/raashithmohamme1" class="btn btn-light mt-3">View Profile</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
